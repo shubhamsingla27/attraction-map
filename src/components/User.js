@@ -259,7 +259,7 @@ const User = () => {
                     <h2 className="drawer-head">{userInfo.display_name}</h2>
                     <h4 className="drawer-h4">{userInfo.email}</h4>
                     <span className="displaydate">
-                        <h3 className="left grey">Account Created:</h3>
+                        <h3 className="left grey">Account created:</h3>
                         <h4 className="grey">
                             {dateDistance(userInfo.created_at)}
                         </h4>
