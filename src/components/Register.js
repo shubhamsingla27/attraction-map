@@ -105,7 +105,7 @@ const Register = () => {
             <h1 className="regcomp_heading">
                 Please tell us a little about you!
             </h1>
-            <section>
+            <section className="regcomp_section">
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"

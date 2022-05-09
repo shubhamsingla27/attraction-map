@@ -205,7 +205,7 @@ const User = () => {
                 </button>
             </header>
 
-            <Box display="flex">
+            {/* <Box display="flex">
                 <Typography variant="h6">Explore new place </Typography>
                 <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
                     <div>
@@ -217,15 +217,21 @@ const User = () => {
                         />
                     </div>
                 </Autocomplete>
-            </Box>
+            </Box> */}
             <br />
             <CssBaseline />
-            <Grid container spacing={3} style={{ width: "100%" }}>
+            <Grid
+                container
+                spacing={3}
+                className="usercomp-grid"
+                style={{ width: "100%" }}
+            >
                 <Grid item xs={12} md={4}>
                     <List
                         parks={parks}
                         childClicked={childClicked}
                         isLoading={isLoading}
+                        setCoordinates={setCoordinates}
                     />
                 </Grid>
                 <Grid

@@ -4,7 +4,7 @@
 }
 .list-container {
     /* height: 100%; */
-    padding: 25px;
+    padding: 0 25px;
 }
 .list-container-head {
     margin-bottom: 35px !important;
@@ -14,4 +14,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.searchinp {
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .list-container {
+        padding: 0 15px;
+    }
+    .list-container-div1 {
+        flex-direction: column;
+    }
+    .list-container-head {
+        margin-bottom: 10px !important;
+        text-align: center;
+    }
+    .list-container-div1-div {
+        margin: auto;
+    }
+    .searchinp {
+        margin: auto;
+    }
+    .grid-list {
+        margin-top: 10px !important;
+    }
 }

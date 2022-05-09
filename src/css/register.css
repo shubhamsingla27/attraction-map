@@ -19,6 +19,17 @@ section {
     border-radius: 10px;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
+@media (max-width: 800px) {
+    .regcomp_section {
+        width: 80%;
+        max-width: 437px;
+        min-height: 47%;
+    }
+    .regcomp_heading {
+        width: 85%;
+        text-align: center;
+    }
+}
 
 form {
     display: flex;
