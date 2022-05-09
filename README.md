@@ -24,7 +24,7 @@
 
 ## Components used
 - Google Maps
-- Rapid Api: Gets a list of attractions.
+- Rapid Api: Gets a list of attractions
 - Material UI
 
 ## Future Enhancements
