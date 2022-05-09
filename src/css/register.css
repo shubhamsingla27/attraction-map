@@ -55,7 +55,6 @@ textarea {
     border-radius: 0.2rem;
     border: 1px solid #a9a9a9;
     margin-top: 1rem;
-    /* text-indent: 2px; */
 }
 
 label,
@@ -102,8 +101,6 @@ button {
     color: #fff;
     padding: 0.25rem;
     margin-bottom: 0px;
-    /* position: relative; */
-    /* bottom: -10px; */
 }
 
 .instructions > svg {

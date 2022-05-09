@@ -194,19 +194,6 @@ const User = () => {
                 </button>
             </header>
 
-            {/* <Box display="flex">
-                <Typography variant="h6">Explore new place </Typography>
-                <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
-                    <div>
-                        <input
-                            type="text"
-                            className="searchinp"
-                            placeholder="Search.."
-                            style={{ marginLeft: "10px" }}
-                        />
-                    </div>
-                </Autocomplete>
-            </Box> */}
             <br />
             <CssBaseline />
             <Grid
@@ -249,7 +236,6 @@ const User = () => {
                 open={state[anchor]}
                 onClose={toggleDrawer(anchor, false)}
             >
-                {/* <div className="drawer-div"> */}
                 <div>
                     <h2 className="drawer-head">{userInfo.display_name}</h2>
                     <h4 className="drawer-h4">{userInfo.email}</h4>
@@ -277,7 +263,6 @@ const User = () => {
                         <span className="pointer">Logout</span>
                     </p>
                 </div>
-                {/* </div> */}
             </Drawer>
             <Dialog
                 open={open}

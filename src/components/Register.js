@@ -24,19 +24,15 @@ const Register = () => {
 
     const [user, setUser] = useState("");
     const [validName, setValidName] = useState(false);
-    // const [userFocus, setUserFocus] = useState(false);
 
     const [email, setEmail] = useState("");
     const [validEmail, setValidEmail] = useState(false);
-    // const [emailFocus, setEmailFocus] = useState(false);
 
     const [pwd, setPwd] = useState("");
     const [validPwd, setValidPwd] = useState(false);
-    // const [pwdFocus, setPwdFocus] = useState(false);
 
     const [matchPwd, setMatchPwd] = useState("");
     const [validMatch, setValidMatch] = useState(false);
-    // const [matchFocus, setMatchFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState("");
     const [showPwd, setShowPwd] = useState(false);
@@ -77,12 +73,9 @@ const Register = () => {
                 JSON.stringify({ display_name: user, email, password: pwd }),
                 {
                     headers: { "Content-Type": "application/json" },
-                    // withCredentials: true,
                 }
             );
             console.log(response.data);
-            // console.log(JSON.stringify(response));
-            // setSuccess(true);
             const accessToken = response?.data?.authentication_token;
             const personDetails = response?.data?.person;
             setAuth({ email, pwd, personDetails, accessToken });
@@ -123,14 +116,11 @@ const Register = () => {
                         required
                         aria-invalid={validName ? "false" : "true"}
                         aria-describedby="uidnote"
-                        // onFocus={() => setUserFocus(true)}
-                        // onBlur={() => setUserFocus(false)}
                         placeholder="Display Name"
                     />
                     <p
                         id="uidnote"
                         className={
-                            // userFocus && user && !validName
                             user && !validName ? "instructions" : "offscreen"
                         }
                     >
@@ -151,8 +141,6 @@ const Register = () => {
                         required
                         aria-invalid={validEmail ? "false" : "true"}
                         aria-describedby="emailnote"
-                        // onFocus={() => setEmailFocus(true)}
-                        // onBlur={() => setEmailFocus(false)}
                         placeholder="Email"
                     />
                     <p
@@ -173,8 +161,6 @@ const Register = () => {
                         required
                         aria-invalid={validPwd ? "false" : "true"}
                         aria-describedby="pwdnote"
-                        // onFocus={() => setPwdFocus(true)}
-                        // onBlur={() => setPwdFocus(false)}
                         placeholder="Password"
                     />
                     <p
@@ -205,8 +191,6 @@ const Register = () => {
                         required
                         aria-invalid={validMatch ? "false" : "true"}
                         aria-describedby="confirmnote"
-                        // onFocus={() => setMatchFocus(true)}
-                        // onBlur={() => setMatchFocus(false)}
                         placeholder="Password Again"
                     />
                     <p
