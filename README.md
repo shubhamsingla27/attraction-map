@@ -26,3 +26,6 @@
 - Google Maps
 - Rapid Api: Gets a list of attractions.
 - Material UI
+
+## Future Enhancements
+- Implement a filter for the attraction types. (State Parks, National Parks, Museums, Landmarks, ...)
