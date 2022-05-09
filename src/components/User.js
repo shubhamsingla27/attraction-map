@@ -17,13 +17,10 @@ import {
     DialogContent,
     DialogActions,
     Dialog,
-    Box,
     Drawer,
-    Typography,
     CssBaseline,
 } from "@mui/material";
 
-import { Autocomplete } from "@react-google-maps/api";
 const GETDETAILS_URL = "/api/v2/people/me";
 const RESET_URL = "/api/v2/people/reset_password";
 
@@ -33,7 +30,6 @@ const User = () => {
     const [bounds, setBounds] = useState({});
     const [childClicked, setChildClicked] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
-    const [autocomplete, setAutocomplete] = useState(null);
     const [resetResp, setResetResp] = useState("");
     const [state, setState] = React.useState({
         right: false,
@@ -50,13 +46,6 @@ const User = () => {
         updated_at: "2019-01-29T06:23:47.341Z",
     });
     const [open, setOpen] = React.useState(false);
-
-    const onLoad = (autoC) => setAutocomplete(autoC);
-    const onPlaceChanged = () => {
-        const lat = autocomplete.getPlace().geometry.location.lat();
-        const lng = autocomplete.getPlace().geometry.location.lng();
-        setCoordinates({ lat, lng });
-    };
 
     const navigate = useNavigate();
     const { setAuth } = useContext(AuthContext);

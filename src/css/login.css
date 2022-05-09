@@ -23,6 +23,14 @@
         min-height: 47%;
     }
 }
+.forgotpwd {
+    margin: 0px;
+    text-align: center;
+    color: #3579ea;
+}
+.forgotpwd > span {
+    cursor: pointer;
+}
 .pbtnslogin {
     display: grid;
     grid-template: 3.5rem / 1fr 1fr;
