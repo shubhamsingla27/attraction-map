@@ -1,10 +1,10 @@
 # Attractions Map Interface
 
-
+## Features
 ### Login and Sign Up
 - User is able to input an email address
 - User is able to input a password.
-- User should see a link that reads “Forgot password?”,
+- User should see a link that reads “Forgot password?”
 
 ### User Home
 - User is able to request a password change
@@ -18,13 +18,13 @@
 - User is able to search attractions around any given location string
 - User is able to click on the map marker to see the attraction details
 
-## Supported device types
+## Supported Device Types
 - Desktop
 - Mobile
 
-## Components used
+## Components
 - Google Maps
-- Rapid Api: Gets a list of attractions
+- [Rapid API](https://rapidapi.com/apidojo/api/travel-advisor/): Gets a list of attractions
 - Material UI
 
 ## Future Enhancements
