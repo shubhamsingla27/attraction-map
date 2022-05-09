@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
+import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import useAuth from "../hooks/useAuth";
 import axios from "../api/axios";
 import "../css/register.css";
@@ -37,6 +39,7 @@ const Register = () => {
     // const [matchFocus, setMatchFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState("");
+    const [showPwd, setShowPwd] = useState(false);
 
     useEffect(() => {
         userRef.current.focus();
@@ -99,6 +102,9 @@ const Register = () => {
             errRef.current.focus();
         }
     };
+    const togglePwd = () => {
+        setShowPwd((prevState) => !prevState);
+    };
 
     return (
         <div className="regcomp">
@@ -160,7 +166,7 @@ const Register = () => {
                     </p>
 
                     <input
-                        type="password"
+                        type={showPwd ? "text" : "password"}
                         id="password"
                         onChange={(e) => setPwd(e.target.value)}
                         value={pwd}
@@ -183,16 +189,16 @@ const Register = () => {
                         Must include uppercase and lowercase letters, a number
                         and a special character.
                         <br />
-                        Allowed special characters:{" "}
-                        <span aria-label="exclamation mark">!</span>{" "}
-                        <span aria-label="at symbol">@</span>{" "}
-                        <span aria-label="hashtag">#</span>{" "}
-                        <span aria-label="dollar sign">$</span>{" "}
+                        Allowed special characters:
+                        <span aria-label="exclamation mark">!</span>
+                        <span aria-label="at symbol">@</span>
+                        <span aria-label="hashtag">#</span>
+                        <span aria-label="dollar sign">$</span>
                         <span aria-label="percent">%</span>
                     </p>
 
                     <input
-                        type="password"
+                        type={showPwd ? "text" : "password"}
                         id="confirm_pwd"
                         onChange={(e) => setMatchPwd(e.target.value)}
                         value={matchPwd}
@@ -214,6 +220,19 @@ const Register = () => {
                         <FontAwesomeIcon icon={faInfoCircle} />
                         Must match the first password input field.
                     </p>
+                    <div onClick={togglePwd} className="showPwd">
+                        {showPwd ? (
+                            <>
+                                <VisibilityOffOutlinedIcon color="primary" />
+                                <span>Hide Password</span>
+                            </>
+                        ) : (
+                            <>
+                                <VisibilityOutlinedIcon color="primary" />
+                                <span>Show Password</span>
+                            </>
+                        )}
+                    </div>
                     <p
                         ref={errRef}
                         className={
