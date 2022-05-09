@@ -1,0 +1,131 @@
+.regcomp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #299d96;
+    color: #fff;
+}
+section {
+    width: 100%;
+    max-width: 420px;
+    /* min-height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    /* padding-bottom: 1rem; */
+}
+
+a,
+a:visited {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button,
+textarea {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    border: 1px solid #a9a9a9;
+    margin-top: 1rem;
+    /* text-indent: 2px; */
+}
+
+label,
+button {
+    margin-top: 1rem;
+    /* cursor: pointer; */
+}
+button:enabled {
+    cursor: pointer;
+}
+.errorpara {
+    height: 10px;
+}
+.pbtns {
+    display: grid;
+    grid-template: 3.5rem / 1fr 1fr;
+    gap: 17px;
+}
+.pbtns--signup {
+    color: #fff;
+    background-color: #249929;
+}
+.pbtns--signup:disabled {
+    background-color: #659c67;
+    color: gray;
+}
+.pbtns--login {
+    color: #fff;
+    background-color: #2a8ed7;
+}
+.pbtns--login:disabled {
+    background-color: #92b9d6;
+    color: gray;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.2rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    margin-bottom: 0px;
+    /* position: relative; */
+    /* bottom: -10px; */
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}

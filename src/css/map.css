@@ -1,0 +1,24 @@
+.mapcontainer {
+    height: 85vh;
+    width: 100%;
+}
+.markerContainer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.markerContainer:hover {
+    z-index: 2;
+}
+.mappaper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    font-size: 12px !important;
+    cursor: pointer;
+}
+.mapper-typography {
+}

@@ -1,0 +1,17 @@
+.grid-list {
+    height: 75vh;
+    overflow: auto;
+}
+.list-container {
+    /* height: 100%; */
+    padding: 25px;
+}
+.list-container-head {
+    margin-bottom: 35px !important;
+}
+.loading {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

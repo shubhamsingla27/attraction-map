@@ -1,0 +1,81 @@
+.usercomp {
+    min-height: 100vh;
+    background-color: #42963b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+    /* height: 65px; */
+    /* padding: 1rem 2rem; */
+}
+.header-title {
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header-logo {
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #c4c4c4;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: transparent !important;
+}
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    background-color: #e2e2e2 !important;
+    padding: 0px 2%;
+    width: 30%;
+}
+.teeee {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.aligncent {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.pointer {
+    cursor: pointer;
+    padding: 5px;
+}
+.displaydate {
+    display: flex;
+}
+.displaydate > .left {
+    /* margin: 0px; */
+    margin-right: auto;
+}
+.drawer-head {
+    color: #646464;
+    margin-bottom: 0px;
+}
+.drawer-h4 {
+    color: #919191;
+    margin-top: 0px;
+}
+.grey {
+    color: #646464;
+}
+.red {
+    color: #e81e1e;
+}
+.blue {
+    color: #118ce5;
+}
+.btmmrgz {
+    margin: 0;
+    font-size: 1.17em;
+}
+.paddbtm {
+    padding-bottom: 2rem;
+}
+.searchinp {
+    margin-top: 0 !important;
+}

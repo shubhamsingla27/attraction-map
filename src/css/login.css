@@ -1,0 +1,52 @@
+.logincomp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #29739d;
+    color: #fff;
+}
+.errorpara-login {
+}
+.logincomp_heading {
+    text-align: center;
+    margin: 45px 0px;
+}
+.logincomp_section {
+}
+.pbtnslogin {
+    display: grid;
+    grid-template: 3.5rem / 1fr 1fr;
+    gap: 17px;
+}
+.pbtnslogin--signup {
+    color: #fff;
+    background-color: #2a8ed7;
+}
+.pbtnslogin--signup:disabled {
+    background-color: #659c67;
+    color: gray;
+}
+.pbtnslogin--login {
+    background-color: #249929;
+    color: #fff;
+}
+.pbtnslogin--login:disabled {
+    background-color: #92b9d6;
+    color: gray;
+}
+.showPwd {
+    display: flex;
+    margin-top: 0.4rem;
+}
+.showPwd > svg {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.showPwd > span {
+    color: grey;
+    cursor: pointer;
+}
+.point {
+}

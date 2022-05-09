@@ -1,0 +1,1 @@
+# Attractions map interface
